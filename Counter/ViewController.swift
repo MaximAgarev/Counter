@@ -20,10 +20,7 @@ class ViewController: UIViewController {
     
     var counterValue: Int = 0 {
         didSet {
-            if counterValue == 100000 {
-                counterLabel.font = UIFont.systemFont(ofSize:64.0)
-            }
-            counterLabel.text = "\(counterValue)"
+            counterLabel.text = "Значение счётчика: \n \n\(counterValue)"
         }
     }
 
